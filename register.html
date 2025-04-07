@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agriguardians - Estilo Prehispánico</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="back">
+    <nav class="nav-menu">
+      <div class="container-logo">
+        <img src="./assets/icons/maiz.png" alt="Logo" />
+      </div>
+      <!-- Ícono hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+
+      <div class="container-navegation" id="nav-links">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    
+
+  </main>
+
+  <footer class="contact">
+    <h2>Contacto</h2>
+    <p>Síguenos en nuestras redes sociales para más actualizaciones.</p>
+  </footer>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  
+</body>
+</html>

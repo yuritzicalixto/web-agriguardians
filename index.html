@@ -1,19 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agriguardians - Estilo Prehispánico</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <nav></nav>
-    </header>
-    <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-    </main>
+  <header class="hero" id="back">
+    <nav class="nav-menu">
+      <div class="container-logo">
+        <img src="./assets/icons/maiz.png" alt="Logo" />
+      </div>
+      <!-- Ícono hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+
+      <div class="container-navegation" id="nav-links">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#agriguardians">AgriGuardians</a></li>
+          <li><a href="#caracteristicas">Características</a></li>
+          <li><a href="#faqs">F.A.Q.s</a></li>
+          <li><a href="#recursos">Recursos</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./register.html">Registro</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="main-home">
+      <div class="home-descript">
+        <h3>¿Qué es Agriguardians?</h3>
+        <h3>Es una <strong>Aplicación Interactiva</strong></h3>
+        <br />
+        <p>
+          Agriguardians es un videojuego que te enseña sobre la agricultura
+          prehispánica a través de una experiencia interactiva y educativa.
+        </p>
+        <br />
+        <div class="descript-social">
+          <a href="#"><img src="./assets/icons/unity.png" alt="Linkedin" /></a>
+          <a href="#"><img src="./assets/icons/instagram.png" alt="Instagram" /></a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="./assets/icons/macehual.png" alt="Macehual" />
+      </div>
+    </section>
+
+
+    <section class="info-section">
+        <div class="info-content">
+          <div class="info-img">
+            <img src="./assets/img/background.jpeg" alt="Descripción de la imagen" />
+          </div>
+          <div class="info-text">
+            <h2>Alcanza millones de jugadores con AgriGuardians</h2>
+            <ul>
+              <li>Explora y aprende sobre la agricultura prehispánica.</li>
+              <li>Únete a una comunidad educativa y divertida.</li>
+            </ul>
+            <a href="#" class="btn-download">Descargar Ahora</a>
+          </div>
+        </div>
+      
+        <div class="info-content reverse">
+          <div class="info-text">
+            <h2>Descubre el poder de la IA con nuestra suite</h2>
+            <ul>
+              <li>Aprende con retos interactivos.</li>
+              <li>Desarrolla tu conocimiento agrícola ancestral.</li>
+            </ul>
+          </div>
+          <div class="info-img">
+            <img src="./assets/img/poss.jpg" alt="Descripción de la imagen" />
+          </div>
+        </div>
+      </section>
+      
+
+  </main>
+
+  <footer class="contact">
+    <h2>Contacto</h2>
+    <p>Síguenos en nuestras redes sociales para más actualizaciones.</p>
+  </footer>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  
 </body>
 </html>
