@@ -1,6 +1,6 @@
 :root {
     --white: #ffff;
-    --black: #0a0605;
+    --black: #000000;
     --dark: #232830;
     --primary: #081b29;
     --title: #10d0f2;
@@ -97,6 +97,12 @@
     font-family: "Lato", sans-serif;
   }
   
+  .agri h3{
+    text-align: center;
+    padding: 30px;
+    color: var(--title);
+  }
+
   .descript-social {
     margin-top: 10px;
   }
@@ -171,6 +177,70 @@
   /*============ END INFO ============*/
 
 
+
+  /*============= FAQS =============*/
+  .main-since {
+    background-color: #000000;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px;
+  }
+
+ .faq-section h2 {
+    text-align: center;
+    color: #10d0f2;
+    padding: 15px;
+  }
+
+  .faq-section {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .faq-title {
+    color: #00abf0;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .faq-item {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .faq-item:hover {
+    background-color: #2a2a2a;
+  }
+
+  .faq-item::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+  }
+
+  .faq-answer {
+    display: none;
+    margin-top: 10px;
+    color: #ccc;
+  }
+
+  .active .faq-answer {
+    display: block;
+  }
+
+  .active::after {
+    content: '-';
+  }
+  /*============= END FAQS =========*/
+
+
+
   /*============ FOOTER ============*/
   footer.contact {
     padding: 30px;
@@ -241,3 +311,70 @@
     /*============ END INFO ============*/
   }
   
+
+  .cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 340px);/*Se llenara automaticamente de las columnas del mismo tamaño que quepan*/
+    gap: 26px;
+    place-content: center;
+}
+
+.product-card{
+    width: 340px;
+}
+.product-card img{
+    width: 340px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;/*La img tendra su tamaño original, independientemente del with y height*/
+}
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  }
+  .product-info figure {
+    margin: 0;
+  }
+  .product-info figure img {
+    width: 35px;
+    height: 35px;
+  }
+  .product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: var(--block);
+  }
+  .product-info div p:nth-child(2) {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--text);
+  }
+  @media (max-width: 640px) {
+    /*Start Menú*/
+    .menu {
+      display: block;
+    }
+    .navbar-left ul {
+      display: none;
+    }
+    .navbar-email {
+      display: none;
+    }
+    /*End Mneú*/
+    .cards-container {
+      grid-template-columns: repeat(auto-fill, 240px);
+    }
+    .product-card {
+      width: 240px;
+    }
+    .product-card img {
+      width: 240px;
+      height: 140px;
+    }
+
+  }
