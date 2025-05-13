@@ -20,17 +20,38 @@
   
   body {
     background-color: var(--black);
-    font-family: "M PLUS 1 Code", monospace;
+    /* font-family: "M PLUS 1 Code", monospace; */
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
   }
   
   /* ========== NAV MENU ========== */
+  /* .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 24px;
+    border-bottom: 1px solid var(--block);
+    position: sticky;
+    top: 0;
+  } */
+
   .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 24px;
     border-bottom: 1px solid var(--block);
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--black);
+    z-index: 1000;
+  }
+
+  .main-principal {
+    margin-top: 80px;
   }
   
   .container-logo img {
@@ -179,11 +200,16 @@
 
 
   /*============= FAQS =============*/
+  .fqs {
+    margin-top: 80px;
+  }
+
   .main-since {
     background-color: #000000;
     color: white;
     font-family: sans-serif;
     padding: 20px;
+    
   }
 
  .faq-section h2 {

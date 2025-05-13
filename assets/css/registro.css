@@ -3,19 +3,22 @@
     --black:#000000;
     --dark:#232830;
     --very-light-pink: #C7C7C7;
-    --text-input-field: #6b6969;
+    --text-input-field: #F7F7F7;
     --hospital-green:#ACD9B2;
     --sm:14px;
     --md:16px;
     --lg:18px;
 }
 
-/*
+
 body{
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    background: #606364; 
-} */
+} 
+
+.registro-main {
+    margin-top: 100px;
+}
 
 .login{
     width: 100%; /*Ocupa el 100% de la pantalla*/
@@ -52,7 +55,7 @@ body{
     margin-bottom: 54px;
 }
 .title{
-    font-size: var(--lg);
+    /* font-size: var(--lg); */
     margin-bottom: 30px;
     text-align: start;
     color: var(--white);
