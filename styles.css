@@ -4,7 +4,8 @@
     --dark: #232830;
     --primary: #081b29;
     --title: #10d0f2;
-    --text: #edf1f1;
+    /*--text: #edf1f1; */
+    --text: #acc9c9; 
     --secondary: #008287;
     --block: #00abf0;
     --sm: 14px;
@@ -19,7 +20,7 @@
   }
   
   body {
-    background-color: var(--black);
+    background-color: var(--white);
     /* font-family: "M PLUS 1 Code", monospace; */
     margin: 0;
     font-family: 'Quicksand', sans-serif;
@@ -46,7 +47,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--black);
+    background-color: var(--white);
     z-index: 1000;
   }
 
@@ -137,7 +138,7 @@
   /*============ INFO ============*/
   .info-section {
     padding: 40px 20px;
-    background-color: #000000;
+    background-color: #ffffff;
   }
   
   .info-content {
@@ -185,7 +186,7 @@
     margin-top: 15px;
     padding: 12px 24px;
     background-color: #ff0;
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     border-radius: 8px;
@@ -205,7 +206,7 @@
   }
 
   .main-since {
-    background-color: #000000;
+    background-color: #ffffff;
     color: white;
     font-family: sans-serif;
     padding: 20px;
@@ -271,7 +272,7 @@
   footer.contact {
     padding: 30px;
     text-align: center;
-    background-color: #010202;
+    background-color: #ffffff;
     color: #ffffff;
   }
   
@@ -301,7 +302,7 @@
       position: absolute;
       top: 70px;
       right: 0;
-      background-color: var(--black);
+      background-color: var(--white);
       width: 100%;
       z-index: 99;
     }
