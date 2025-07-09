@@ -1,13 +1,4 @@
-// const toggle = document.getElementById('menu-toggle');
-//     const navLinks = document.getElementById('nav-links');
-  
-//     toggle.addEventListener('click', () => {
-//       navLinks.classList.toggle('active');
-//     });
-
-    
-    
-document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function () {
     const toggle = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('nav-links');
   
@@ -19,6 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Preguntas Frecuentes
-function toggleFAQ(element) {
-    element.classList.toggle('active');
-  }
+const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      item.querySelector('.faq-question').addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
